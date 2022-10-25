@@ -2,7 +2,7 @@
 
 $host='db'; //service name from docker-compose.yml;
 $username='devuser';
-$pass='root';
+$password='root';
 $db='webapp';
 
 $conn = new mysqli($host,$usenamer,$password,$db);

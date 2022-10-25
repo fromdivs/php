@@ -1,11 +1,11 @@
 <?php
 
 $host='db'; //service name from docker-compose.yml;
-$user="devuser";
-$pass="devpass";
-$db="webapp";
+$username='devuser';
+$pass='root';
+$db='webapp';
 
-$conn = new mysqli($host,$user,$password,$db);
+$conn = new mysqli($host,$usenamer,$password,$db);
 if($conn->connect_error){
     echo 'connection failed' . $conn->connect_error;
 }
